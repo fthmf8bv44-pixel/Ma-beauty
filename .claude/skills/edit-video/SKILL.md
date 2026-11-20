@@ -15,3 +15,5 @@ For each finished video, end with a posting card:
 - **When:** day and time (Melbourne)
 - **Caption** (copy-ready), **hashtags**, **location tag**, **cover frame**, **sound suggestion**
 - **Ad version** (primary text, headline, CTA) if it's strong enough to put money behind
+
+Always finish with the full posting pack from `knowledge/posting-pack.md` for every item.

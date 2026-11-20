@@ -17,3 +17,5 @@ Plan MA Beauty's organic content for the coming week (Monday to Sunday, Melbourn
    format, topic), then each post in full with copy-ready caption and hashtags.
 5. Finish with a short summary for the owner: what to film this week, which PNGs are ready, and
    what to post each day.
+
+Always finish with the full posting pack from `knowledge/posting-pack.md` for every item.

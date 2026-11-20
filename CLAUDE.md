@@ -15,7 +15,9 @@ and ask a question rather than guessing when something important is missing.
 - `brand/brand-guide.md`: colours, fonts, tone of voice, photo style.
 - `business/marketing-plan.md`: target customers, local area, budget, current priorities.
 - `knowledge/`: house guides: `no-ai-look.md` (must follow for every design and caption),
-  `where-to-post.md`, `video-best-practice.md`, `partnership-ads.md`.
+  `where-to-post.md`, `video-best-practice.md`, `partnership-ads.md`, `posting-pack.md` (required
+  with every post and ad).
+- `business/reviews.md`: real client reviews, word for word. The only source for testimonials.
 
 ## The USP
 MA Beauty's **hero body treatment** (see "Hero treatment / USP" in `business/profile.md`) is
@@ -62,5 +64,8 @@ offered by almost no one else locally. Hero it across organic, ads and advice un
    - Videos: `marketing/videos/YYYY-MM-DD-name/` (edit plan, overlays). Video files aren't stored
      in git (too big), so always deliver them with SendUserFile.
    - Performance reviews: `marketing/reports/YYYY-MM.md`
-5. **Never look or sound AI-made.** Check every design and caption against `knowledge/no-ai-look.md`.
-6. Australian English spelling (colour, personalise, centre) and AUD prices.
+5. **Every post and ad comes with a full posting pack** (`knowledge/posting-pack.md`): where,
+   when, step-by-step how to post, caption, hashtags, and for ads the complete audience and Ads
+   Manager build sheet. Never hand over a graphic or video without it.
+6. **Never look or sound AI-made.** Check every design and caption against `knowledge/no-ai-look.md`.
+7. Australian English spelling (colour, personalise, centre) and AUD prices.

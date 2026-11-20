@@ -1,0 +1,14 @@
+/* MA Beauty brand styles, matched to mabeautytherapy.com.au. Link from a design with:
+   <link rel="stylesheet" href="../../../brand/templates/ma.css"> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@font-face{font-family:Branch;src:url('../fonts/ma-heading.woff2') format('woff2'),url('../fonts/ma-heading.ttf') format('truetype')}
+:root{--ox:#370C0E;--white:#fff;--grey:#E8E6E6;--gold:#B8955A;--text:#595959;--ink:#1d1414}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100vw;height:100vh;overflow:hidden}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+.serif{font-family:Branch,Georgia,serif;font-weight:400;letter-spacing:.005em}
+.label{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.32em;font-size:22px}
+.photo{background-size:cover;background-repeat:no-repeat}
+.ox{background:var(--ox);color:#fff}
+.grey{background:var(--grey)}
+.outline{display:inline-block;border:1.5px solid currentColor;border-radius:999px;padding:16px 38px;font-family:Montserrat,sans-serif;font-weight:500;font-size:20px;letter-spacing:.28em;text-transform:uppercase}

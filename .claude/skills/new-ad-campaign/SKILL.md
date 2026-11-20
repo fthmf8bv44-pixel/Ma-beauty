@@ -19,3 +19,5 @@ Create a paid ad campaign for MA Beauty. Request: $ARGUMENTS
    build steps and the PNG locations.
 
 Never claim the campaign is live. The owner publishes it.
+
+Always finish with the full posting pack from `knowledge/posting-pack.md` for every item.
