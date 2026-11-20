@@ -18,7 +18,9 @@ and **Meta/TikTok ad policies**.
 | Before/after photos in ads | Meta/TikTok policy (organic only, real, consented) |
 
 ## ✅ Snappy, compliant alternatives
-- "Few Melbourne clinics have Thuzzle. We do."
+- "Only a few Melbourne clinics have Thuzzle. We do."
+- "Used by clinics around the world" (instead of "world-renowned", which is vaguer and harder to back up)
+- "A non-surgical alternative: no surgery, no anaesthetic, no needles, no downtime" (instead of "safer alternative")
 - "Thuzzle is still rare in Melbourne."
 - "Italian-engineered radiofrequency."
 - "Targets stubborn fat. Tightens skin."

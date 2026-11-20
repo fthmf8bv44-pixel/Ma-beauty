@@ -78,9 +78,9 @@ Then **pin it to the top of your profile**. It explains your USP to every new vi
 
 **Caption**
 ```
-Thuzzle is the treatment I get asked about most, and few Melbourne clinics have it.
+Only a few clinics in Melbourne have Thuzzle, and it's the treatment I get asked about most.
 
-It uses radiofrequency at more than one depth, so it can work on stubborn areas like the tummy, love handles and double chin, while tightening the skin above. 15 to 30 minutes per area, and you're straight back to your day.
+It's Italian-engineered radiofrequency, used by clinics around the world. It gently heats stubborn fat in areas like the tummy, love handles and double chin, and tightens the skin above it. No surgery, no needles, no downtime. 15 to 30 minutes per area, and you're straight back to your day.
 
 Not sure if it's right for you? Book a body consult and I'll give you an honest answer. The $22 comes off your treatment.
 
@@ -88,7 +88,7 @@ Mira x
 Book via the link in bio, or DM me "THUZZLE".
 ```
 **Hashtags (paste at the end of the caption):** `#thuzzle #bodycontouring #caulfieldsouth #melbournebeauty #skintightening`
-**Alt text:** `Mira from MA Beauty with text: What is Thuzzle? Slides explain how Thuzzle works, treatment areas, what to expect and prices.`
+**Alt text:** `Mira from MA Beauty with text: Only a few Melbourne clinics have Thuzzle. We do. Slides explain what Thuzzle is, why it's a non-surgical alternative, treatment areas and prices.`
 
 **Google Business Profile (same evening)**
 1. Search **MA Beauty** in Google (logged in) or open the Google Maps app → **You** → your business.
@@ -269,7 +269,7 @@ Gift cards are a quick purchase, so that campaign sends people straight to the F
 
 ### Ads in A1 (create 2 ads, then Meta shows the better one more)
 
-**Ad A1-1: Mira "Few Melbourne clinics have Thuzzle. We do."**
+**Ad A1-1: Mira "Only a few Melbourne clinics have Thuzzle. We do."**
 (When you have a real Thuzzle treatment photo, swap in the split-screen version
 `ad1b-thuzzle-split-PREVIEW-*`, with Mira on one side and Thuzzle in action on the other. Send me the
 photo and I'll finish it. Don't run the PREVIEW files as they are.)
@@ -279,9 +279,9 @@ photo and I'll finish it. Don't run the PREVIEW files as they are.)
   swap in `ad1-thuzzle-mira-story.png`
 - **Primary text (main):**
   ```
-  Few Melbourne clinics have Thuzzle. We do.
+  Only a few Melbourne clinics have Thuzzle. We do.
 
-  Italian-engineered radiofrequency that targets stubborn fat and tightens skin. No needles. No downtime. 15–30 minutes per area, from $159.
+  Italian-engineered radiofrequency, used by clinics around the world. Targets stubborn fat and tightens skin. No needles. No downtime. 15–30 minutes per area, from $159.
 
   Tummy, love handles, double chin, thighs, arms. Tap "Send message" and ask Mira anything.
   ```

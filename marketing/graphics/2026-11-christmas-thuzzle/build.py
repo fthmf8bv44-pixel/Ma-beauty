@@ -41,15 +41,15 @@ def ad_thuzzle(split):
         .ph{{position:absolute;top:0;height:{ph}px}}
         .ph-note{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font:500 26px Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6b6262}}
         .bot{{position:absolute;left:0;bottom:0;width:100%;height:{h-ph}px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px {pad_b}px}}
-        h1{{font-size:{84 if tall else 78}px;line-height:1.04;margin:20px 0 24px}}
+        h1{{font-size:{78 if tall else 72}px;line-height:1.06;margin:20px 0 24px}}
         .sub{{font-size:{30 if tall else 28}px;line-height:1.5;opacity:.93;max-width:880px}}
         .from{{margin-top:26px;font-size:21px}}
         """
         body = f"""{photos}
         <div class="bot ox">
           <div class="label">Thuzzle · Caulfield South</div>
-          <h1 class="serif">Few Melbourne clinics<br>have Thuzzle. We do.</h1>
-          <div class="sub">Italian-engineered radiofrequency.<br>Targets stubborn fat. Tightens skin.<br>No needles. No downtime.</div>
+          <h1 class="serif">{"Only a few Melbourne<br>clinics have Thuzzle.<br>We do." if tall else "Only a few Melbourne clinics<br>have Thuzzle. We do."}</h1>
+          <div class="sub">Italian-engineered. Used by clinics worldwide.<br>Targets stubborn fat. Tightens skin.<br>No needles. No downtime.</div>
           <div class="label from">From $159 · Hawthorn Rd</div>
         </div>"""
         return css, body
@@ -127,10 +127,10 @@ def car1(w, h):
     css = f"""
     .top{{position:absolute;left:0;top:0;width:{w}px;height:{int(h*0.66)}px;{bg('mira-portrait-logo.jpg', w, int(h*0.66), 0.45)}}}
     .bot{{position:absolute;left:0;right:0;bottom:0;height:34%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
-    h1{{font-size:112px;line-height:1;margin-top:18px}}
+    h1{{font-size:74px;line-height:1.08;margin-top:18px}}
     .swipe{{margin-top:26px;font-size:24px;opacity:.8}}"""
-    body = """<div class="top photo"></div><div class="bot ox"><div class="label">Our most asked question</div>
-    <h1 class="serif">What is Thuzzle?</h1><div class="swipe">Mira explains →</div></div>"""
+    body = """<div class="top photo"></div><div class="bot ox"><div class="label">Thuzzle at MA Beauty</div>
+    <h1 class="serif">Only a few Melbourne clinics<br>have Thuzzle. We do.</h1><div class="swipe">What is Thuzzle? →</div></div>"""
     return css, body
 
 def text_slide(label, title, html_body, n, bg="ox"):
@@ -171,12 +171,12 @@ designs = [
     ("ad3-review-rachael-story", *STORY, review("I place a lot of trust in Mira’s expertise and advice, and am getting great results.", "Rachael K.", "Fresha", "", 66)),
     ("ad4-gift-cards-feed", *FEED, ad_gift), ("ad4-gift-cards-story", *STORY, ad_gift),
     ("post-carousel-thuzzle-01", *FEED, car1),
-    ("post-carousel-thuzzle-02", *FEED, text_slide("How it works", "Radiofrequency, at more than one depth",
-        "Thuzzle warms the targeted fat layer and tightens the skin above it, in the same treatment. It also supports lymphatic drainage.", 2)),
-    ("post-carousel-thuzzle-03", *FEED, text_slide("Where we use it", "Body and face",
-        "<ul><li>Tummy, love handles, back</li><li>Thighs, knees, buttocks, arms</li><li>Double chin</li><li>Face, neck and décolletage</li></ul>", 3, "grey")),
-    ("post-carousel-thuzzle-04", *FEED, text_slide("What to expect", "In and out in your lunch break",
-        "<ul><li>15–30 minutes per body area</li><li>No downtime, so straight back to your day</li><li>A course of treatments gives the best results</li><li>Results vary from person to person</li></ul>", 4)),
+    ("post-carousel-thuzzle-02", *FEED, text_slide("The technology", "What is Thuzzle?",
+        "Italian-engineered radiofrequency, used by clinics around the world.<br><br>It gently heats the targeted fat layer and tightens the skin above it, in a single treatment. It also supports lymphatic drainage.", 2)),
+    ("post-carousel-thuzzle-03", *FEED, text_slide("Why clients choose it", "A non-surgical alternative",
+        "<ul><li>No surgery and no anaesthetic</li><li>No needles</li><li>No downtime, straight back to your day</li><li>Every treatment starts with a consult with Mira</li></ul>", 3, "grey")),
+    ("post-carousel-thuzzle-04", *FEED, text_slide("Where and how long", "In and out in your lunch break",
+        "<ul><li>Tummy, love handles, back, arms</li><li>Thighs, knees, buttocks, double chin</li><li>15–30 minutes per area</li><li>A course gives the best results. Results vary</li></ul>", 4)),
     ("post-carousel-thuzzle-05", *FEED, text_slide("Start here", "Book a body consult with Mira",
         "Mira will look at your goals and tell you honestly if Thuzzle is right for you.<br><br>$22 for 30 minutes, taken off your treatment.<br>Tummy $279 · Love handles $299 · Double chin $159", 5, "grey")),
     ("post-review-eveline", *FEED, review("Mira is amazing, very passionate and professional. Great personalised skin treatment!", "Eveline T.", "Fresha", "Thuzzle Full Face Lift &amp; Tighten", 70)),
