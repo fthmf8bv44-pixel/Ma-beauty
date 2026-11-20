@@ -8,3 +8,4 @@ footage/
 *.m4v
 *.MOV
 *.MP4
+__pycache__/
