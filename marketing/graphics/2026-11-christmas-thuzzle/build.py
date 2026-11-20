@@ -24,7 +24,7 @@ designs = []
 FEED, STORY = (1080, 1350), (1080, 1920)
 
 # ---------- AD 1: "Few Melbourne clinics have Thuzzle. We do." ----------
-THUZZLE_PHOTO = None   # set to a file in brand/photos/ once there's a real Thuzzle photo
+THUZZLE_PHOTO = "../owner/photo-thuzzle-body-closeup.jpg"   # real Thuzzle (GMV) close-up from the owner
 def ad_thuzzle(split):
     def f(w, h):
         tall = h > 1500
@@ -165,7 +165,7 @@ def story_dec(w, h):
 
 designs = [
     ("ad1-thuzzle-mira-feed", *FEED, ad_thuzzle(False)), ("ad1-thuzzle-mira-story", *STORY, ad_thuzzle(False)),
-    ("ad1b-thuzzle-split-PREVIEW-feed", *FEED, ad_thuzzle(True)), ("ad1b-thuzzle-split-PREVIEW-story", *STORY, ad_thuzzle(True)),
+    ("ad1b-thuzzle-split-feed", *FEED, ad_thuzzle(True)), ("ad1b-thuzzle-split-story", *STORY, ad_thuzzle(True)),
     ("ad2-thuzzle-menu-feed", *FEED, ad_menu), ("ad2-thuzzle-menu-story", *STORY, ad_menu),
     ("ad3-review-rachael-feed", *FEED, review("I place a lot of trust in Mira’s expertise and advice, and am getting great results.", "Rachael K.", "Fresha", "", 66)),
     ("ad3-review-rachael-story", *STORY, review("I place a lot of trust in Mira’s expertise and advice, and am getting great results.", "Rachael K.", "Fresha", "", 66)),

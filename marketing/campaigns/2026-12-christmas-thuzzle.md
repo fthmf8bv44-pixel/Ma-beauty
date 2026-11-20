@@ -274,9 +274,8 @@ Gift cards are a quick purchase, so that campaign sends people straight to the F
 ### Ads in A1 (create 2 ads, then Meta shows the better one more)
 
 **Ad A1-1: Mira "Only a few Melbourne clinics have Thuzzle. We do."**
-(When you have a real Thuzzle treatment photo, swap in the split-screen version
-`ad1b-thuzzle-split-PREVIEW-*`, with Mira on one side and Thuzzle in action on the other. Send me the
-photo and I'll finish it. Don't run the PREVIEW files as they are.)
+(**Add a second version:** the split-screen `ad1b-thuzzle-split-feed.png` / `-story.png` (Mira + the real
+Thuzzle handpiece) with the same text and settings. Meta will show whichever performs better.)
 - **Identity:** Facebook Page **MA Beauty** + Instagram **@mabeautyau**
 - **Format:** Single image
 - **Media:** upload `ad1-thuzzle-mira-feed.png` → then **Edit placements**: for **Stories and Reels**
