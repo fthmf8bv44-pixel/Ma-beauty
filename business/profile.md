@@ -13,6 +13,10 @@
 - **Website:** https://www.mabeautytherapy.com.au/
 - **Booking (Fresha):** https://www.fresha.com/a/ma-beauty-melbourne-342-hawthorn-road-gdr4qek9
 - **Gift cards (Fresha):** https://www.fresha.com/a/ma-beauty-melbourne-342-hawthorn-road-gdr4qek9/gift-cards
+- **Direct booking links (service already selected, tested 20 Nov 2026):**
+  Format: `https://www.fresha.com/a/ma-beauty-melbourne-342-hawthorn-road-gdr4qek9/booking?offerItems=s%3A<serviceId>`
+  - EMS November special $77: `https://www.fresha.com/a/ma-beauty-melbourne-342-hawthorn-road-gdr4qek9/booking?offerItems=s%3A11450016`
+  (Service IDs are in the Fresha page data. Use direct links in Story link stickers and ads.)
 - **Payment:** cash, card, Apple Pay, Google Pay
 
 ## Opening hours (Fresha)
