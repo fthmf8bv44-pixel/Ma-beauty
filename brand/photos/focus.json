@@ -1,0 +1,14 @@
+{
+  "_note": "Face boxes [x, y, w, h] in original pixels, checked by eye. tools/faces.py uses these instead of auto-detection.",
+  "mira-portrait-logo.jpg": [[443, 651, 318, 318]],
+  "clients-robes-laughing.jpg": [[480, 150, 140, 150], [878, 138, 136, 136], [1130, 150, 150, 160]],
+  "ems-inshape-consult-mira.jpg": [[450, 300, 120, 140], [965, 352, 90, 100]],
+  "hifu-ultramage-body-mira.jpg": [[736, 61, 123, 144], [286, 573, 123, 143]],
+  "mira-treating-gold-facial.jpg": [[370, 416, 268, 268], [654, 1268, 266, 225]],
+  "gold-mask-headband.jpg": [[143, 511, 900, 655]],
+  "gold-facial-application.jpg": [[245, 1002, 389, 327], [797, 20, 369, 328]],
+  "hifu-face.jpg": [[675, 225, 327, 450]],
+  "facial-jelly-mask.jpg": [[430, 225, 613, 613]],
+  "brow-mask.jpg": [[266, 143, 1145, 859]],
+  "jelly-mask-hands.jpg": [[798, 634, 654, 368]]
+}

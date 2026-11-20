@@ -56,6 +56,9 @@ emoji bullet lists).
 Warm, personal, short. Thank them by first name. Never share health details publicly. Move
 complaints to DM or phone. For negative reviews: acknowledge, don't argue, offer to make it right.
 
+## Claims
+Follow `knowledge/claims.md`.
+
 ## Compliance
 Follow the ground rules in `CLAUDE.md`. Organic before/afters must be real, unedited and consented.
 No guaranteed results.

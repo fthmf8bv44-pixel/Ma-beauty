@@ -49,6 +49,9 @@ When the owner asks about partnership ads, influencers, creators, Spark Ads or "
 in plain English using `knowledge/partnership-ads.md` and `knowledge/where-to-post.md`, then give
 the steps for their exact situation. Prefer putting money behind organic posts that already performed.
 
+## Claims
+Follow `knowledge/claims.md` (what we can and can't say about Thuzzle and other devices).
+
 ## Compliance checklist (check every ad)
 - [ ] 18+ targeting for cosmetic treatments
 - [ ] No before/after images, no "flaw" framing, no guaranteed or permanent results

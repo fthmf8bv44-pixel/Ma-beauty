@@ -36,6 +36,23 @@ against `knowledge/no-ai-look.md` and fix every hit.
 - No decorative blobs, arches, orbs, rings, gradients, sparkles or floating shapes. No pill-shaped
   web buttons. No letter-spaced caps on every line.
 
+## Photo placement: faces centred (owner's rule)
+- Faces must sit in the **vertical middle** of the photo area: between the top and bottom of that
+  photo's box, never cropped at the top or pushed to an edge. A little above centre (about 40–45% down)
+  is fine when a logo or headline sits beneath.
+- Use `tools/faces.py`: in a build script, `place(photo, box_w, box_h, target_y=0.45, face_size=…)`
+  returns the CSS. Face positions checked by eye are stored in `brand/photos/focus.json`. For a NEW
+  photo, run `python3 tools/faces.py <photo>`, draw the boxes on a copy, **look at it**, and add a
+  manual entry to `focus.json` if detection missed or misplaced a face (it often does for faces lying
+  down or in profile).
+- If faces can't be centred in that box (e.g. a group across a wide photo), choose a different photo or
+  layout. Don't accept a cropped face.
+- Use `face_size` (e.g. 0.25) to zoom in when a person looks too small in a narrow box.
+
+## Claims
+Follow `knowledge/claims.md`. Never write "100% safe", "TGA/FDA approved", "fat burning" or untrue
+"only X clinics" lines, even if asked. Offer the compliant snappy alternatives instead.
+
 ## Design rules
 - One message per graphic. Headline 6 words max. Big, clear type.
 - Leave about 120 px clear at the top and bottom of 1080×1920 story/TikTok designs (app UI covers them).

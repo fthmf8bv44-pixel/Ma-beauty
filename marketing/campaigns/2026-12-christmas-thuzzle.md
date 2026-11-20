@@ -78,7 +78,7 @@ Then **pin it to the top of your profile**. It explains your USP to every new vi
 
 **Caption**
 ```
-Thuzzle is the treatment I get asked about most, and there aren't many clinics that have it.
+Thuzzle is the treatment I get asked about most, and few Melbourne clinics have it.
 
 It uses radiofrequency at more than one depth, so it can work on stubborn areas like the tummy, love handles and double chin, while tightening the skin above. 15 to 30 minutes per area, and you're straight back to your day.
 
@@ -168,7 +168,7 @@ MA Beauty gift cards can be used on anything: Thuzzle, facials, HiFu, brows, las
 Link in bio, or ask me in the studio.
 ```
 **Hashtags:** `#melbournegiftideas #christmasgiftideas #caulfieldsouth #giftcard #melbournebeauty`
-**Alt text:** `Three women in robes laughing at MA Beauty, with text: Christmas gift cards. Give them an hour with Mira.`
+**Alt text:** `A client relaxing in a gold facial mask at MA Beauty, with text: Christmas gift cards. Give them an hour with Mira.`
 **Google post button:** **Buy** → gift card link (below).
 
 ### Post 8 / 11 / 15 / 16 / 17: Gift card stories
@@ -269,18 +269,21 @@ Gift cards are a quick purchase, so that campaign sends people straight to the F
 
 ### Ads in A1 (create 2 ads, then Meta shows the better one more)
 
-**Ad A1-1: Mira "Few clinics have Thuzzle"**
+**Ad A1-1: Mira "Few Melbourne clinics have Thuzzle. We do."**
+(When you have a real Thuzzle treatment photo, swap in the split-screen version
+`ad1b-thuzzle-split-PREVIEW-*`, with Mira on one side and Thuzzle in action on the other. Send me the
+photo and I'll finish it. Don't run the PREVIEW files as they are.)
 - **Identity:** Facebook Page **MA Beauty** + Instagram **@mabeautyau**
 - **Format:** Single image
 - **Media:** upload `ad1-thuzzle-mira-feed.png` → then **Edit placements**: for **Stories and Reels**
   swap in `ad1-thuzzle-mira-story.png`
 - **Primary text (main):**
   ```
-  Thuzzle is radiofrequency body contouring and skin tightening, and not many clinics in Melbourne have it. Mira does, right here on Hawthorn Road.
+  Few Melbourne clinics have Thuzzle. We do.
 
-  Tummy, love handles, double chin, thighs, arms. 15–30 minutes per area. No downtime.
+  Italian-engineered radiofrequency that targets stubborn fat and tightens skin. No needles. No downtime. 15–30 minutes per area, from $159.
 
-  Tap "Send message" and ask Mira anything.
+  Tummy, love handles, double chin, thighs, arms. Tap "Send message" and ask Mira anything.
   ```
 - **Primary text (option 2, add with "Add text option"):**
   ```
@@ -288,7 +291,7 @@ Gift cards are a quick purchase, so that campaign sends people straight to the F
 
   Non-surgical. 15–30 min per area. Body consult $22, taken off your treatment.
   ```
-- **Headline:** `Thuzzle at MA Beauty, Caulfield South`
+- **Headline:** `Thuzzle from $159, Caulfield South`
 - **Headline option 2:** `Non-surgical body contouring`
 - **Call to action:** **Send message**
 - **Message template** (Create new → Custom):
@@ -373,8 +376,8 @@ Meta may flag cosmetic treatment ads as "special requirements". Just confirm the
 - [x] No guaranteed results. We say "non-surgical", "no downtime", "results vary" (carousel)
 - [x] We avoid "clinically proven" and "burns fat", and say "tummy tightening" not "tummy tuck"
 - [x] Prices match Fresha. Reviews are word for word with first name and initial
-- [x] "Not many clinics have it", rather than "the only clinic" (another clinic in Bentleigh East may
-      offer Thuzzle)
+- [x] "Few Melbourne clinics have Thuzzle", not "only two" (at least 3–4 Melbourne clinics list it)
+- [x] No "100% safe", "TGA/FDA approved" or "fat burning" (see `knowledge/claims.md`)
 - [x] Photos used are of Mira and the clinic. No other machine is presented as Thuzzle
 - If Meta rejects an ad: open it → **Request review**, and check the wording against this list. Most
   rejections are for body-image wording.

@@ -29,10 +29,14 @@
 The website lists different hours (Mon–Sat 9–5). [CONFIRM and make all listings match]
 
 ## ⭐ Hero treatment / USP: Thuzzle (RF Thuzzle Face & Body)
-Thuzzle is a radiofrequency (RF) platform. MA Beauty uses it for body contouring, skin tightening
-and resurfacing. The owner says almost no one else nearby offers it. Note: a Fresha search snippet
-suggested a business in Bentleigh East may also list Thuzzle, so avoid absolute claims like "the only
-clinic in Melbourne". Say "hard to find" or "one of very few" instead.
+Thuzzle is an Italian-engineered (GMV) radiofrequency device, distributed in Australia by The Global
+Beauty Group. MA Beauty uses it for body contouring, skin tightening and resurfacing.
+**How rare is it in Melbourne?** (checked 21 Nov 2026) At least 3–4 Melbourne clinics list it: MA Beauty,
+Melbourne Skin & Body (672 Centre Rd, Bentleigh East, about 4 km away, $800 per single area), Sculpt By J,
+and possibly Youthful by Rosie (Brighton). So say **"Few Melbourne clinics have Thuzzle. We do."** and
+never "only two". **Price edge:** MA Beauty's Thuzzle body starts at $159 ($279 for the tummy), against
+$800 per area at the nearest competitor. Don't name competitors in ads. "From $159" is enough.
+See `knowledge/claims.md` for wording.
 
 **Spelling:** Fresha uses both "Thuzzle" and "Thuzzel". Use **Thuzzle** everywhere. [CONFIRM]
 

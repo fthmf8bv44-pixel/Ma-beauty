@@ -2,7 +2,13 @@
 """Builds the HTML for the Christmas Thuzzle campaign graphics, then renders PNGs.
 Run from the repo root:  python3 marketing/graphics/2026-11-christmas-thuzzle/build.py
 Edit text here, re-run, and every size updates."""
-import os, subprocess
+import os, subprocess, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../tools"))
+from faces import place
+PHOTOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../brand/photos/website")
+def bg(photo, bw, bh, ty=0.45, face_size=None):
+    """CSS that fills a bw x bh box with the photo, faces centred (ty = height fraction)."""
+    return f"background-image:url({P}/{photo});background-repeat:no-repeat;" + place(os.path.join(PHOTOS, photo), bw, bh, ty, face_size=face_size)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 B = "../../../brand"           # brand folder, relative to this folder
@@ -17,25 +23,37 @@ def page(name, w, h, css, body):
 designs = []
 FEED, STORY = (1080, 1350), (1080, 1920)
 
-# ---------- AD 1: Mira + "Few clinics have Thuzzle" ----------
-def ad_mira(w, h):
-    split = 0.56 if h < 1500 else 0.50
-    pad = 84 if h < 1500 else 96
-    css = f"""
-    .top{{position:absolute;left:0;top:0;width:100%;height:{int(h*split)}px;background-image:url({P}/mira-portrait-logo.jpg);background-position:50% 22%}}
-    .bot{{position:absolute;left:0;bottom:0;width:100%;height:{h-int(h*split)}px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 {pad}px {400 if h>1500 else 10}px}}
-    h1{{font-size:{86 if h<1500 else 96}px;line-height:1.05;margin:22px 0 26px}}
-    .sub{{font-size:30px;line-height:1.5;opacity:.92;max-width:820px}}
-    .addr{{margin-top:34px;font-size:18px;letter-spacing:.3em;opacity:.8}}
-    """
-    body = f"""<div class="top photo"></div>
-    <div class="bot ox">
-      <div class="label">Thuzzle at MA Beauty</div>
-      <h1 class="serif">Few clinics have Thuzzle.<br>Mira does.</h1>
-      <div class="sub">Non-surgical body contouring and skin tightening.<br>15–30 minutes per area. No downtime.</div>
-      <div class="label addr">Hawthorn Rd · Caulfield South</div>
-    </div>"""
-    return css, body
+# ---------- AD 1: "Few Melbourne clinics have Thuzzle. We do." ----------
+THUZZLE_PHOTO = None   # set to a file in brand/photos/ once there's a real Thuzzle photo
+def ad_thuzzle(split):
+    def f(w, h):
+        tall = h > 1500
+        ph = int(h * (0.54 if tall else 0.55))          # photo area height
+        pad_b = 330 if tall else 40
+        if split:
+            half = w // 2
+            right = (bg(THUZZLE_PHOTO, half, ph) if THUZZLE_PHOTO else "background:#cfc9c9")
+            photos = f"""<div class="ph" style="left:0;width:{half}px;{bg('mira-portrait-logo.jpg', half, ph, 0.45, 0.26)}"></div>
+            <div class="ph" style="left:{half}px;width:{w-half}px;{right}">{'' if THUZZLE_PHOTO else '<div class="ph-note">Thuzzle treatment photo<br>goes here</div>'}</div>"""
+        else:
+            photos = f"""<div class="ph" style="left:0;width:{w}px;{bg('mira-portrait-logo.jpg', w, ph, 0.45)}"></div>"""
+        css = f"""
+        .ph{{position:absolute;top:0;height:{ph}px}}
+        .ph-note{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font:500 26px Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6b6262}}
+        .bot{{position:absolute;left:0;bottom:0;width:100%;height:{h-ph}px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px {pad_b}px}}
+        h1{{font-size:{84 if tall else 78}px;line-height:1.04;margin:20px 0 24px}}
+        .sub{{font-size:{30 if tall else 28}px;line-height:1.5;opacity:.93;max-width:880px}}
+        .from{{margin-top:26px;font-size:21px}}
+        """
+        body = f"""{photos}
+        <div class="bot ox">
+          <div class="label">Thuzzle · Caulfield South</div>
+          <h1 class="serif">Few Melbourne clinics<br>have Thuzzle. We do.</h1>
+          <div class="sub">Italian-engineered radiofrequency.<br>Targets stubborn fat. Tightens skin.<br>No needles. No downtime.</div>
+          <div class="label from">From $159 · Hawthorn Rd</div>
+        </div>"""
+        return css, body
+    return f
 
 # ---------- AD 2: Thuzzle price menu on oxblood ----------
 def ad_menu(w, h):
@@ -58,7 +76,7 @@ def ad_menu(w, h):
     {rows([("Tummy tightening","$279"),("Love handles","$299"),("Double chin","$159")])}
     <div class="group">Face</div>
     {rows([("Full face lift &amp; tighten","$249")])}
-    <div class="note">Non-surgical. No downtime.<br>Body consult $22, taken off your treatment.</div>"""
+    <div class="note">Targets stubborn fat. Tightens skin.<br>No needles. No downtime.<br>Body consult $22, taken off your treatment.</div>"""
     return css, body
 
 # ---------- AD 3 / posts: review card on soft grey ----------
@@ -87,10 +105,10 @@ def review(quote, who, src, treatment="", size=64):
 # ---------- AD 4: Christmas gift cards ----------
 def ad_gift(w, h):
     tall = h > 1500
-    split = 0.5 if not tall else 0.46
+    split = 0.55 if not tall else 0.54
     css = f"""
-    .top{{position:absolute;left:0;top:0;width:100%;height:{int(h*split)}px;background-image:url({P}/clients-robes-laughing.jpg);background-position:50% 40%}}
-    .bot{{position:absolute;left:0;bottom:0;width:100%;height:{h-int(h*split)}px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 100px {300 if tall else 0}px}}
+    .top{{position:absolute;left:0;top:0;width:100%;height:{int(h*split)}px;{bg('gold-mask-headband.jpg', w, int(h*split), 0.5)}}}
+    .bot{{position:absolute;left:0;bottom:0;width:100%;height:{h-int(h*split)}px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 100px {330 if tall else 0}px}}
     h1{{font-size:{92 if tall else 84}px;line-height:1.06;margin:24px 0 28px}}
     .sub{{font-size:30px;line-height:1.5;opacity:.92}}
     .outline{{margin-top:40px}}
@@ -99,7 +117,7 @@ def ad_gift(w, h):
     <div class="bot ox">
       <div class="label">Christmas gift cards</div>
       <h1 class="serif">Give them an hour<br>with Mira</h1>
-      <div class="sub">Facials, Thuzzle, brows and more.<br>Buy online in a minute.</div>
+      <div class="sub">Thuzzle, facials, brows and more.<br>Buy online in a minute.</div>
       <div class="outline">Link in bio</div>
     </div>"""
     return css, body
@@ -107,7 +125,7 @@ def ad_gift(w, h):
 # ---------- CAROUSEL: What is Thuzzle? ----------
 def car1(w, h):
     css = f"""
-    .top{{position:absolute;inset:0 0 34% 0;background-image:url({P}/mira-portrait-logo.jpg);background-position:50% 20%}}
+    .top{{position:absolute;left:0;top:0;width:{w}px;height:{int(h*0.66)}px;{bg('mira-portrait-logo.jpg', w, int(h*0.66), 0.45)}}}
     .bot{{position:absolute;left:0;right:0;bottom:0;height:34%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
     h1{{font-size:112px;line-height:1;margin-top:18px}}
     .swipe{{margin-top:26px;font-size:24px;opacity:.8}}"""
@@ -146,7 +164,8 @@ def story_dec(w, h):
     return css, body
 
 designs = [
-    ("ad1-thuzzle-mira-feed", *FEED, ad_mira), ("ad1-thuzzle-mira-story", *STORY, ad_mira),
+    ("ad1-thuzzle-mira-feed", *FEED, ad_thuzzle(False)), ("ad1-thuzzle-mira-story", *STORY, ad_thuzzle(False)),
+    ("ad1b-thuzzle-split-PREVIEW-feed", *FEED, ad_thuzzle(True)), ("ad1b-thuzzle-split-PREVIEW-story", *STORY, ad_thuzzle(True)),
     ("ad2-thuzzle-menu-feed", *FEED, ad_menu), ("ad2-thuzzle-menu-story", *STORY, ad_menu),
     ("ad3-review-rachael-feed", *FEED, review("I place a lot of trust in Mira’s expertise and advice, and am getting great results.", "Rachael K.", "Fresha", "", 66)),
     ("ad3-review-rachael-story", *STORY, review("I place a lot of trust in Mira’s expertise and advice, and am getting great results.", "Rachael K.", "Fresha", "", 66)),

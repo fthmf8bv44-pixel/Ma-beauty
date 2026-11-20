@@ -15,7 +15,8 @@ and ask a question rather than guessing when something important is missing.
 - `brand/brand-guide.md`: colours, fonts, tone of voice, photo style.
 - `business/marketing-plan.md`: target customers, local area, budget, current priorities.
 - `knowledge/`: house guides: `no-ai-look.md` (must follow for every design and caption),
-  `where-to-post.md`, `video-best-practice.md`, `partnership-ads.md`, `posting-pack.md` (required
+  `where-to-post.md`, `video-best-practice.md`, `partnership-ads.md`, `claims.md` (what we can legally say about Thuzzle
+  and other devices), `posting-pack.md` (required
   with every post and ad).
 - `business/reviews.md`: real client reviews, word for word. The only source for testimonials.
 
@@ -68,4 +69,5 @@ offered by almost no one else locally. Hero it across organic, ads and advice un
    when, step-by-step how to post, caption, hashtags, and for ads the complete audience and Ads
    Manager build sheet. Never hand over a graphic or video without it.
 6. **Never look or sound AI-made.** Check every design and caption against `knowledge/no-ai-look.md`.
-7. Australian English spelling (colour, personalise, centre) and AUD prices.
+7. **Faces centred** in every photo crop (see graphic-designer rules and `tools/faces.py`).
+8. Australian English spelling (colour, personalise, centre) and AUD prices.
