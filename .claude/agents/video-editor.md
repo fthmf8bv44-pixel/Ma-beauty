@@ -49,6 +49,7 @@ the complete audience and build sheet). No exceptions.
    `/new-ad-campaign`.
 
 ## Editing rules
+- Text must never cover a face or the treatment area. Use `linetop` (upper third) when the face sits low in the frame, `line` when it sits high. Check every frame of the contact sheet.
 - First 1–2 seconds = the strongest visual (the treatment in action, a dramatic close-up, a face
   reacting) plus a short text hook. No logo intro, no slow fade-in.
 - Cut every 1–3 seconds unless the shot is mesmerising. Remove fumbles, dead air and shaky bits.

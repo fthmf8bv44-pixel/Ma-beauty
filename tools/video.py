@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """MA Beauty video toolkit (wraps ffmpeg).
+Clips in an edit plan can be videos OR photos (photos get a face-centred crop and slow zoom:
+{"src": "photo.jpg", "duration": 2.5, "zoom": "in"|"out", "zoom_amount": 0.08, "face_y": 0.45}).
 
   python3 tools/video.py info <video>...
       Duration, resolution, fps, rotation, audio for each file.
@@ -11,6 +13,8 @@
       Build a finished video from an edit plan (see tools/edit-plan.example.json).
 """
 import json, os, subprocess, sys, tempfile, shutil
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+IMAGE_EXT = (".jpg", ".jpeg", ".png", ".webp")
 
 def run(cmd):
     r = subprocess.run(cmd, capture_output=True, text=True)
@@ -77,6 +81,23 @@ def edit(plan_path):
     parts = []
     for i, c in enumerate(plan["clips"]):
         src = rp(c["src"]); speed = float(c.get("speed", 1.0))
+        if src.lower().endswith(IMAGE_EXT):
+            # Still photo: face-centred crop + slow zoom ("in" or "out")
+            from faces import place_xy
+            dur = float(c.get("duration", 2.5)); n = max(1, int(dur * fps))
+            sw, sh, cx, cy, ffx, ffy = place_xy(src, W * 2, H * 2, float(c.get("face_y", 0.45)),
+                                                face_size=c.get("face_size"))
+            amt = float(c.get("zoom_amount", 0.08))
+            z = f"1+{amt}*on/{n}" if c.get("zoom", "in") == "in" else f"1+{amt}-{amt}*on/{n}"
+            v = (f"scale={sw}:{sh},crop={W*2}:{H*2}:{cx}:{cy},"
+                 f"zoompan=z='{z}':x='(iw-iw/zoom)*{ffx:.3f}':y='(ih-ih/zoom)*{ffy:.3f}':d=1:s={W}x{H}:fps={fps},"
+                 f"setsar=1,{grade}")
+            out = os.path.join(tmp, f"p{i:03d}.mp4")
+            run(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-framerate", str(fps), "-t", str(dur), "-i", src,
+                 "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-filter_complex", f"[0:v]{v}[v]",
+                 "-map", "[v]", "-map", "1:a", "-t", str(dur), "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-ac", "2", out])
+            parts.append(out); continue
         has_audio = any(s["codec_type"] == "audio" for s in probe(src)["streams"])
         if c.get("fit", "fill") == "fill":  # crop to fill the frame
             fx = float(c.get("focus_x", 0.5)); fy = float(c.get("focus_y", 0.5))
@@ -114,8 +135,11 @@ def edit(plan_path):
     for j, o in enumerate(plan.get("overlays", [])):
         cmd += ["-loop", "1", "-t", str(total), "-i", rp(o["image"])]
         st, en = float(o.get("start", 0)), float(o.get("end", total))
-        vf.append(f"[{n}:v]format=rgba,fade=t=in:st={st}:d=0.2:alpha=1,"
-                  f"fade=t=out:st={max(st, en - 0.2)}:d=0.2:alpha=1[o{j}]")
+        fi, fo = float(o.get("fade_in", 0.2)), float(o.get("fade_out", 0.2))
+        chain = "format=rgba"
+        if fi > 0: chain += f",fade=t=in:st={st}:d={fi}:alpha=1"
+        if fo > 0: chain += f",fade=t=out:st={max(st, en - fo)}:d={fo}:alpha=1"
+        vf.append(f"[{n}:v]{chain}[o{j}]")
         vf.append(f"{last_v}[o{j}]overlay=0:0:enable='between(t,{st},{en})'[v{j}]")
         last_v = f"[v{j}]"; n += 1
     vf.append(f"{last_v}null[vout]")

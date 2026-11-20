@@ -1,0 +1,85 @@
+{
+ "output": "MA-Thuzzle-Reel.mp4",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "look": "natural",
+ "clips": [
+  {
+   "src": "../../../footage/2026-11-21/v03-IMG5938.mp4",
+   "start": 0.0,
+   "end": 1.8,
+   "mute": true
+  },
+  {
+   "src": "../../../footage/2026-11-21/v11-c29bf520.mov",
+   "start": 8.4,
+   "end": 10.4,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/owner/photo-thuzzle-body-mira.jpg",
+   "duration": 2.2,
+   "zoom": "in"
+  },
+  {
+   "src": "../../../footage/2026-11-21/v03-IMG5938.mp4",
+   "start": 6.2,
+   "end": 8.6,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/owner/photo-thuzzle-body-closeup.jpg",
+   "duration": 2.0,
+   "zoom": "out"
+  },
+  {
+   "src": "../../../footage/2026-11-21/v11-c29bf520.mov",
+   "start": 15.0,
+   "end": 16.8,
+   "mute": true
+  },
+  {
+   "src": "end.png",
+   "duration": 2.8,
+   "zoom": "in",
+   "zoom_amount": 0.02
+  }
+ ],
+ "overlays": [
+  {
+   "image": "t1.png",
+   "start": 0.0,
+   "end": 1.8,
+   "fade_out": 0
+  },
+  {
+   "image": "t2.png",
+   "start": 1.8,
+   "end": 3.8,
+   "fade_in": 0
+  },
+  {
+   "image": "t3.png",
+   "start": 3.8,
+   "end": 6.0
+  },
+  {
+   "image": "t4.png",
+   "start": 6.0,
+   "end": 8.4
+  },
+  {
+   "image": "t5.png",
+   "start": 8.4,
+   "end": 10.4
+  },
+  {
+   "image": "t6.png",
+   "start": 10.4,
+   "end": 12.2
+  }
+ ]
+}

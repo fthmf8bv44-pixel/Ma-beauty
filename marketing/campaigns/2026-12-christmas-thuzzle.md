@@ -34,6 +34,10 @@ tidy, make an album in Photos called "MA Christmas" and add them there.
 # PART 1: Organic posts (free)
 
 ## Calendar
+> **Update 21 Nov:** three Reels are ready (`marketing/videos/2026-11-21-reels-posting-pack.md`).
+> Thuzzle Reel **Tue 24 Nov 7:30pm** (replaces #4), EMS Reel **Thu 26 Nov 7:30pm**, Face Reel **Tue 1 Dec
+> 7:30pm** (Meet Mira moves to **Wed 2 Dec**). Add the Thuzzle Reel to Campaign A as a video ad.
+
 | # | Date (Melbourne) | Time | What | Where |
 |---|---|---|---|---|
 | 1 | Sun 22 Nov | 7:30pm | "What is Thuzzle?" carousel | IG feed + FB + Google |

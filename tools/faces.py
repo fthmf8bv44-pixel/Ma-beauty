@@ -78,3 +78,23 @@ def place(path, bw, bh, target_y=0.45, target_x=0.5, face_size=None):
 if __name__ == "__main__":
     for p in sys.argv[1:]:
         f, size = faces(p); print(p, size, f)
+
+def place_xy(path, bw, bh, target_y=0.45, target_x=0.5, face_size=None):
+    """Numbers version of place(): (scaled_w, scaled_h, crop_x, crop_y, face_fx, face_fy) where
+    crop_x/y is the top-left of the bw x bh crop in the scaled image and face_fx/fy is the
+    face-group centre as a fraction of the crop (useful for zooming towards the face)."""
+    found, (iw, ih) = faces(path)
+    s = max(bw / iw, bh / ih)
+    if face_size and found:
+        fh = max(f[1] + f[3] for f in found) - min(f[1] for f in found)
+        s = max(s, face_size * bh / fh)
+    if found:
+        x0 = min(f[0] for f in found); x1 = max(f[0] + f[2] for f in found)
+        y0 = min(f[1] for f in found); y1 = max(f[1] + f[3] for f in found)
+        fx, fy = (x0 + x1) / 2, (y0 + y1) / 2
+    else:
+        fx, fy = iw / 2, ih / 2
+    ox = min(0, max(bw - iw * s, target_x * bw - fx * s))
+    oy = min(0, max(bh - ih * s, target_y * bh - fy * s))
+    return (round(iw * s), round(ih * s), round(-ox), round(-oy),
+            (fx * s + ox) / bw, (fy * s + oy) / bh)
