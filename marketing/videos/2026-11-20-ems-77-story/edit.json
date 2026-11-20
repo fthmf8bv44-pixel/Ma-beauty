@@ -1,0 +1,14 @@
+{ "output": "MA-EMS-77-Story.mp4", "size": [1080,1920], "fps": 30, "look": "natural",
+  "clips": [
+    {"src": "../../../footage/2026-11-21/v09-IMG7649.mov", "start": 2.0, "end": 4.6, "mute": true},
+    {"src": "../../../footage/2026-11-21/v08-IMG7642.mov", "start": 3.6, "end": 5.6, "mute": true},
+    {"src": "../../../footage/2026-11-21/v04-IMG7476.mov", "start": 15.8, "end": 18.2, "mute": true},
+    {"src": "../../../footage/2026-11-21/v07-IMG7641.mov", "start": 10.6, "end": 12.8, "mute": true},
+    {"src": "end.png", "duration": 3.5, "zoom": "in", "zoom_amount": 0.02}
+  ],
+  "overlays": [
+    {"image": "t1.png", "start": 0.0, "end": 2.6},
+    {"image": "t2.png", "start": 2.6, "end": 4.6},
+    {"image": "t3.png", "start": 4.6, "end": 7.0},
+    {"image": "t4.png", "start": 7.0, "end": 9.2}
+  ] }
