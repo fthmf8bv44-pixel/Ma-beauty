@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- MA Beauty photo-led template (PROVISIONAL until brand is matched to the real website/Instagram).
+     Copy this file into the graphic's folder, put the real photo beside it as photo.jpg,
+     then change the text. Move .words to wherever the photo has empty space. -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#2E2320;--accent:#B76E5D;--paper:#F7F1EC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100vw;height:100vh;overflow:hidden;background:var(--paper)}
+  .photo{position:absolute;inset:0;background:#cbbfb6 url(photo.jpg) center/cover no-repeat}
+  /* gentle shade only behind the words so they stay readable */
+  .shade{position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(transparent,rgba(30,20,18,.55))}
+  .words{position:absolute;left:72px;right:72px;bottom:96px;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif}
+  .label{font-size:28px;font-weight:600;margin-bottom:18px;opacity:.9}
+  h1{font-size:76px;font-weight:600;line-height:1.08;letter-spacing:-.01em;max-width:860px}
+  .small{font-size:30px;margin-top:26px;opacity:.95}
+  .logo{position:absolute;top:64px;left:72px;height:56px}
+</style></head>
+<body>
+  <div class="photo"></div><div class="shade"></div>
+  <!-- <img class="logo" src="../../../brand/logo.png"> -->
+  <div class="words">
+    <div class="label">New at MA Beauty</div>                      <!-- EDIT or delete -->
+    <h1>The body treatment you won't find anywhere else nearby</h1>  <!-- EDIT -->
+    <div class="small">342 Hawthorn Rd, Caulfield South · Book via link in bio</div>
+  </div>
+</body></html>

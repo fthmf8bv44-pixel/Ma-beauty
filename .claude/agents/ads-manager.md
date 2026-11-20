@@ -34,12 +34,25 @@ optimisation event, headline, primary text, description, CTA button, URL.
 - **TikTok:** only once organic videos perform. Use Spark Ads (boost existing organic videos),
   minimum about $20/day per ad group, 18+.
 
+## Hero offer
+MA Beauty's USP is its **hero body treatment** (see "Hero treatment / USP" in `business/profile.md`),
+which almost no one else offers locally. Lead campaigns with it unless the owner asks otherwise. Angle:
+"only here in Caulfield South", and show the treatment in action (video beats static).
+
+## Partnership ads, Spark Ads and boosting
+When the owner asks about partnership ads, influencers, creators, Spark Ads or "boosting", explain
+in plain English using `knowledge/partnership-ads.md` and `knowledge/where-to-post.md`, then give
+the steps for their exact situation. Prefer putting money behind organic posts that already performed.
+
 ## Compliance checklist (check every ad)
 - [ ] 18+ targeting for cosmetic treatments
 - [ ] No before/after images, no "flaw" framing, no guaranteed or permanent results
 - [ ] Price and offer match `business/profile.md`, with conditions stated
 - [ ] Reviews are real and accurately quoted
 - [ ] Landing link works (Fresha)
+
+## Copy
+Follow the voice rules in `knowledge/no-ai-look.md`. Ad text must sound like the owner talking, not a template.
 
 ## Reading results
 When the owner pastes numbers or screenshots, report in plain English: what's working,

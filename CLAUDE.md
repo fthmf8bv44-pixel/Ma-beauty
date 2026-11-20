@@ -14,6 +14,12 @@ and ask a question rather than guessing when something important is missing.
   Facts marked `[CONFIRM]` are unverified, so ask the owner before using them in an ad.
 - `brand/brand-guide.md`: colours, fonts, tone of voice, photo style.
 - `business/marketing-plan.md`: target customers, local area, budget, current priorities.
+- `knowledge/`: house guides: `no-ai-look.md` (must follow for every design and caption),
+  `where-to-post.md`, `video-best-practice.md`, `partnership-ads.md`.
+
+## The USP
+MA Beauty's **hero body treatment** (see "Hero treatment / USP" in `business/profile.md`) is
+offered by almost no one else locally. Hero it across organic, ads and advice unless told otherwise.
 
 ## The team (subagents in `.claude/agents/`)
 | Agent | Use it for |
@@ -21,18 +27,21 @@ and ask a question rather than guessing when something important is missing.
 | `graphic-designer` | Instagram/Facebook/TikTok graphics, story frames, ad creatives, rendered as PNGs |
 | `ads-manager` | Meta (Facebook + Instagram) and TikTok paid campaigns: structure, targeting, budget, copy, reading results |
 | `social-media-manager` | Organic posts, captions, hashtags, reels/TikTok scripts, content calendars, replies to reviews and DMs |
+| `video-editor` | Edits the owner's footage into Reels, TikToks, Stories and video ads, and says where to post each |
 | `marketing-strategist` | Local growth advice: Google Business Profile, referrals, offers, partnerships, what to do next |
 
 ## Shortcuts (skills in `.claude/skills/`)
 - `/weekly-content`: next week's organic posts, captions and graphics
 - `/new-ad-campaign`: a ready-to-publish Meta (or TikTok) campaign plan
 - `/make-graphic`: one graphic or ad creative
+- `/edit-video`: edit footage the owner sends and say where to post it
 - `/monthly-review`: analyse results the owner pastes in and recommend changes
 - `/marketing-advice`: growth recommendations for right now
 
 ## Ground rules
-1. **Never spend money or publish anything.** The owner sets campaigns live and posts
-   content themselves. Claude prepares everything ready to copy and paste.
+1. **Never post, publish or spend money, ever.** The owner posts content and sets campaigns
+   live themselves. Claude edits, designs and writes everything ready to copy and paste, and
+   explains how (e.g. how partnership ads work) whenever asked.
 2. **Advertising compliance (Australia, Meta, TikTok).** For cosmetic treatments like HiFu,
    body sculpting, peels and cosmetic tattoo:
    - Target ads at **18+ only** (Meta and TikTok require this for cosmetic procedures).
@@ -50,5 +59,8 @@ and ask a question rather than guessing when something important is missing.
    - Content calendars: `marketing/content-calendar/YYYY-MM-DD-week.md`
    - Ad campaign plans: `marketing/campaigns/YYYY-MM-campaign-name.md`
    - Graphics: `marketing/graphics/YYYY-MM-DD-name/` (HTML source and PNG)
+   - Videos: `marketing/videos/YYYY-MM-DD-name/` (edit plan, overlays). Video files aren't stored
+     in git (too big), so always deliver them with SendUserFile.
    - Performance reviews: `marketing/reports/YYYY-MM.md`
-5. Australian English spelling (colour, personalise, centre) and AUD prices.
+5. **Never look or sound AI-made.** Check every design and caption against `knowledge/no-ai-look.md`.
+6. Australian English spelling (colour, personalise, centre) and AUD prices.

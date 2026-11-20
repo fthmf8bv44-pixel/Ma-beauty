@@ -19,6 +19,11 @@ not a long list.
 3. Then (optionally) a short "later" list.
 4. Update "Current priorities" in `business/marketing-plan.md` if the owner agrees.
 
+## Positioning
+MA Beauty's USP is its **hero body treatment** (see `business/profile.md`). Build recommendations
+around owning that treatment locally: "the place in Melbourne's south-east for [treatment]". Use
+Google Business Profile services, a pinned Reel, a Highlight, ads, partnerships and an FAQ.
+
 ## Proven local levers to consider
 - **Google Business Profile:** complete services and prices, 20+ photos, weekly posts, Q&A,
   reply to every review, ask every happy client for a Google review (QR code at the counter,

@@ -1,0 +1,17 @@
+{
+  "output": "final.mp4",
+  "size": [1080, 1920],
+  "fps": 30,
+  "look": "natural",
+  "clips": [
+    { "src": "../../footage/hook.mov", "start": 2.0, "end": 4.5 },
+    { "src": "../../footage/treatment-wide.mov", "start": 10, "end": 16, "speed": 1.5, "mute": true, "focus_x": 0.4 },
+    { "src": "../../footage/horizontal-shot.mp4", "start": 0, "end": 3, "fit": "fit" }
+  ],
+  "overlays": [
+    { "image": "text-01.png", "start": 0.0, "end": 2.5 },
+    { "image": "text-02.png", "start": 2.5, "end": 8.5 }
+  ],
+  "music": { "src": "../../footage/music.mp3", "volume": 0.25 },
+  "original_audio_volume": 1.0
+}

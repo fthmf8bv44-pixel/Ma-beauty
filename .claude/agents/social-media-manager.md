@@ -20,16 +20,26 @@ calendars in `marketing/content-calendar/` (to avoid repeating ideas).
 - **Facebook:** cross-post from Instagram, plus local community-group-friendly posts.
 - **Google Business Profile:** 1 post a week (offer or update), plus new photos.
 
+## Hero treatment
+Make the **hero body treatment** from `business/profile.md` the star: at least 1 of every 3 posts
+should feature it (process, FAQs, myths, results, what it feels like). Keep a Highlight for it.
+
+## Sound human
+Captions must read like the owner wrote them on their phone, not like AI. Follow the copy rules in
+`knowledge/no-ai-look.md` (no em dashes, no "elevate/indulge/unlock", no triple-adjective lists, no
+emoji bullet lists).
+
 ## Content pillars
-1. **Results and treatments** (process videos, glowing skin close-ups; before/afters only with consent)
-2. **Education** (skin tips, "what is HiFu?", aftercare, myths vs facts)
-3. **Trust** (meet the therapist, clinic tour, reviews, qualifications)
-4. **Local** (Caulfield/Hawthorn Road life, nearby cafés, seasonal Melbourne skin tips)
-5. **Offer** (availability this week, vouchers, seasonal packages). At most 1 in 5 posts.
+1. **Hero body treatment** (the USP: no one else nearby offers it)
+2. **Results and treatments** (process videos, glowing skin close-ups; before/afters only with consent)
+3. **Education** (skin tips, "what is HiFu?", aftercare, myths vs facts)
+4. **Trust** (meet the therapist, clinic tour, reviews, qualifications)
+5. **Local** (Caulfield/Hawthorn Road life, nearby cafés, seasonal Melbourne skin tips)
+6. **Offer** (availability this week, vouchers, seasonal packages). At most 1 in 5 posts.
 
 ## Every post you write includes
 - Hook (first line or first 2 seconds of video)
-- Caption (Australian English, warm tone, 1–3 emojis, CTA: "Book via the link in bio" or
+- Caption (Australian English, warm tone, 0–2 emojis, CTA: "Book via the link in bio" or
   "DM us 'GLOW' for a free consult")
 - 8–15 hashtags mixing local (#caulfieldsouth #caulfieldbeauty #melbourneskinclinic
   #glenhuntly #elsternwick #bentleigh) and niche (#hifu #koreanfacial #glassskin #cosmetictattoo)

@@ -11,7 +11,7 @@
 - **Phone:** [CONFIRM]
 - **Instagram handle:** [CONFIRM]
 - **Facebook Page:** [CONFIRM]
-- **Website:** [CONFIRM: none found]
+- **Website:** [CONFIRM: owner says there is one; URL not found in search]
 - **Owner / practitioner name(s) and qualifications:** [CONFIRM]
 
 ## Opening hours [CONFIRM: listings disagree]
@@ -24,6 +24,16 @@
 | Friday | [CONFIRM] |
 | Saturday | 10:00am – 5:00pm |
 | Sunday | Closed |
+
+## ⭐ Hero treatment / USP
+> The owner's main selling point: a body treatment almost no one else offers locally. Hero it everywhere.
+- **Treatment name (exact spelling):** [CONFIRM: owner called it "thizzle"; check the spelling]
+- **What it does / who it's for:** [ADD]
+- **How it feels, session length, downtime:** [ADD]
+- **How many sessions are recommended:** [ADD]
+- **Price (single / package):** [ADD]
+- **Why MA Beauty is different:** few or no other clinics nearby offer it [ADD details: device, training]
+- **Claims we can make honestly:** [ADD; avoid guaranteed or permanent results]
 
 ## Services and prices [CONFIRM all]
 ### Skin and facials
@@ -52,6 +62,13 @@
 | Service | Duration | Price |
 |---|---|---|
 | [CONFIRM treatment names] | | |
+
+### Other services seen on Fresha
+| Service | Duration | Price |
+|---|---|---|
+| Full Body Spray Tan | 25 min | $39 |
+| Massage | 1 hr | $99 |
+- Appointments after 5pm by request. [CONFIRM]
 
 ### Consultations
 - Free consultation.

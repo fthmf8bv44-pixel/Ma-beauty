@@ -1,7 +1,9 @@
 # MA Beauty: Brand Guide
 
-> These are **starter defaults**. Replace them with your real logo, colours and fonts when you
-> have them. Put your logo file in `brand/` as `logo.png` (transparent background is best).
+> **Status: PROVISIONAL.** These starter defaults must be replaced with the look of the owner's
+> real website and Instagram (logo, colours, fonts, photo style). Until then, ask for the website,
+> screenshots or the logo before final designs. Put the logo in `brand/` as `logo.png`.
+> Also follow `knowledge/no-ai-look.md`.
 
 ## Colours
 | Role | Name | Hex |
@@ -20,7 +22,7 @@
 - Warm, calm, expert, like a trusted local skin therapist. Not salesy or pushy.
 - Short sentences. Use "you" and "your skin."
 - Positive framing: "glow", "refresh", "lift", "confidence", "self-care".
-- Emojis are fine in organic captions (1–3, such as ✨🤍🌿) but use few in ads.
+- Emojis: 0–2 per caption, and only where the owner would naturally use one. Few in ads.
 - Australian English.
 
 ## Photo and video style

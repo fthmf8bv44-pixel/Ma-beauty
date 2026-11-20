@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 .claude/settings.local.json
+# raw and finished video files are too big for git; deliver them with SendUserFile
+footage/
+*.mp4
+*.mov
+*.m4v
+*.MOV
+*.MP4
