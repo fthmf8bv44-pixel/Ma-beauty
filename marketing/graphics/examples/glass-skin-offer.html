@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- MA Beauty starter template. Copy this file, then change the text in the marked spots.
+     Works at 1080x1350 (feed) and 1080x1920 (story): layout is flexible. -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F7F1EC;--primary:#B76E5D;--dark:#2E2320;--gold:#C9A66B;--blush:#EBD3CB}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100vw;height:100vh;background:var(--bg);color:var(--dark);overflow:hidden}
+  body{font-family:Montserrat,Helvetica,Arial,sans-serif;display:flex;flex-direction:column;
+       justify-content:space-between;padding:140px 96px}
+  .arch{position:absolute;right:-180px;top:-120px;width:720px;height:900px;border-radius:360px 360px 0 0;
+        background:var(--blush);opacity:.7;z-index:0}
+  .ring{position:absolute;left:-160px;bottom:-160px;width:520px;height:520px;border:2px solid var(--gold);
+        border-radius:50%;z-index:0}
+  .z{position:relative;z-index:1}
+  .brand{font-family:'Cormorant Garamond',Georgia,serif;letter-spacing:.35em;font-size:34px;font-weight:600}
+  .kicker{text-transform:uppercase;letter-spacing:.3em;font-size:26px;color:var(--primary);font-weight:600;margin-bottom:28px}
+  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:118px;line-height:1.02}
+  .sub{font-size:34px;line-height:1.45;margin-top:36px;max-width:780px}
+  .price{display:inline-block;margin-top:44px;font-size:40px;font-weight:600;border-bottom:3px solid var(--gold);padding-bottom:6px}
+  .cta{display:inline-block;background:var(--primary);color:#fff;font-size:30px;font-weight:600;letter-spacing:.08em;
+       text-transform:uppercase;padding:30px 52px;border-radius:999px}
+  .loc{font-size:26px;margin-top:26px;letter-spacing:.06em}
+</style></head>
+<body>
+  <div class="arch"></div><div class="ring"></div>
+  <div class="z brand">MA BEAUTY</div>
+  <div class="z">
+    <div class="kicker">Korean Glass Skin Facial</div>        <!-- EDIT -->
+    <h1>Your most radiant skin yet</h1>                         <!-- EDIT -->
+    <p class="sub">Deep hydration and a luminous, glass-like glow. Tailored to your skin.</p> <!-- EDIT -->
+    <div class="price">$249 · Free consultation</div>          <!-- EDIT (must match business/profile.md) -->
+  </div>
+  <div class="z">
+    <div class="cta">Book on Fresha</div>                      <!-- EDIT -->
+    <div class="loc">342 Hawthorn Rd · Caulfield South</div>
+  </div>
+</body></html>
