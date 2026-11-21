@@ -1,16 +1,67 @@
-{ "output": "MA-HiFu-Christmas-50.mp4", "size": [1080,1920], "fps": 30, "look": "natural",
-  "clips": [
-    {"src": "../../../footage/2026-11-21/v01-IMG5926.mp4", "start": 0.0, "end": 2.4, "mute": true},
-    {"src": "../../../brand/photos/owner/photo-face-treatment-mira.jpg", "duration": 2.4, "zoom": "in"},
-    {"src": "../../../footage/2026-11-21/v02-IMG5930.mp4", "start": 1.0, "end": 3.4, "mute": true},
-    {"src": "../../../footage/2026-11-21/v01-IMG5926.mp4", "start": 2.6, "end": 4.6, "mute": true},
-    {"src": "../../../footage/2026-11-21/v02-IMG5930.mp4", "start": 12.0, "end": 14.4, "mute": true},
-    {"src": "end.png", "duration": 3.5, "zoom": "in", "zoom_amount": 0.02}
-  ],
-  "overlays": [
-    {"image": "t1.png", "start": 0.0, "end": 2.4},
-    {"image": "t2.png", "start": 2.4, "end": 4.8},
-    {"image": "t3.png", "start": 4.8, "end": 7.2},
-    {"image": "t4.png", "start": 7.2, "end": 9.2},
-    {"image": "t5.png", "start": 9.2, "end": 11.6}
-  ] }
+{
+ "output": "MA-HiFu-Christmas-50.mp4",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "look": "natural",
+ "clips": [
+  {
+   "src": "../../../footage/2026-11-21/v01-IMG5926.mp4",
+   "start": 0.0,
+   "end": 2.4,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/website/hifu-face.jpg",
+   "duration": 2.4,
+   "zoom": "in"
+  },
+  {
+   "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
+   "start": 1.0,
+   "end": 3.4,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/website/mira-portrait-logo.jpg",
+   "duration": 2.2,
+   "zoom": "in"
+  },
+  {
+   "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
+   "start": 12.0,
+   "end": 14.4,
+   "mute": true
+  },
+  {
+   "src": "end.png",
+   "duration": 3.5,
+   "zoom": "in",
+   "zoom_amount": 0.02
+  }
+ ],
+ "overlays": [
+  {
+   "image": "t1.png",
+   "start": 0.0,
+   "end": 2.4
+  },
+  {
+   "image": "t3.png",
+   "start": 4.8,
+   "end": 7.2
+  },
+  {
+   "image": "t4.png",
+   "start": 7.2,
+   "end": 9.4
+  },
+  {
+   "image": "t5.png",
+   "start": 9.4,
+   "end": 11.8
+  }
+ ]
+}
