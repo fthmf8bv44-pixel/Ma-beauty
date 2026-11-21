@@ -1,21 +1,104 @@
-{ "output": "MA-HiFu-Christmas-50.mp4", "size": [1080,1920], "fps": 30, "look": "natural",
-  "clips": [
-    {"src": "../../../footage/2026-11-21/v01-IMG5926.mp4", "start": 0.0, "end": 2.4, "mute": true},
-    {"src": "../../../footage/2026-11-21/h-IMG7326.mp4", "start": 0.4, "end": 2.4, "mute": true},
-    {"src": "../../../brand/photos/owner/hifu-c3-mira-wide.jpg", "duration": 1.8, "zoom": "in"},
-    {"src": "../../../footage/2026-11-21/v02-IMG5930.mp4", "start": 1.0, "end": 3.4, "mute": true},
-    {"src": "../../../footage/2026-11-21/h-IMG7318.mp4", "start": 15.4, "end": 17.4, "mute": true},
-    {"src": "../../../brand/photos/owner/hifu-c3-glow-handpiece.jpg", "duration": 2.0, "zoom": "in"},
-    {"src": "../../../brand/photos/website/hifu-face.jpg", "duration": 1.6, "zoom": "out"},
-    {"src": "../../../footage/2026-11-21/h-IMG7327.mp4", "start": 0.0, "end": 2.0, "mute": true},
-    {"src": "../../../brand/photos/owner/mira-laughing-client.jpg", "duration": 2.2, "zoom": "out", "face_size": 0.3, "zoom_amount": 0.05},
-    {"src": "../../../footage/2026-11-21/v02-IMG5930.mp4", "start": 12.0, "end": 14.4, "mute": true},
-    {"src": "end.png", "duration": 3.2, "zoom": "in", "zoom_amount": 0.02}
-  ],
-  "overlays": [
-    {"image": "t1.png", "start": 0.0, "end": 2.4},
-    {"image": "t3.png", "start": 6.2, "end": 8.6},
-    {"image": "t3b.png", "start": 10.6, "end": 12.6},
-    {"image": "t4m.png", "start": 16.2, "end": 18.4},
-    {"image": "t5.png", "start": 18.4, "end": 20.8}
-  ] }
+{
+ "output": "MA-HiFu-Christmas-50.mp4",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "look": "natural",
+ "clips": [
+  {
+   "src": "../../../brand/photos/owner/hifu-c4-overhead.jpg",
+   "duration": 2.4,
+   "zoom": "in",
+   "zoom_amount": 0.04
+  },
+  {
+   "src": "../../../footage/2026-11-21/v01-IMG5926.mp4",
+   "start": 0.0,
+   "end": 2.4,
+   "mute": true
+  },
+  {
+   "src": "../../../footage/2026-11-21/h-IMG7326.mp4",
+   "start": 0.4,
+   "end": 2.4,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/owner/hifu-c3-mira-wide.jpg",
+   "duration": 1.8,
+   "zoom": "in"
+  },
+  {
+   "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
+   "start": 1.0,
+   "end": 3.4,
+   "mute": true
+  },
+  {
+   "src": "../../../footage/2026-11-21/h-IMG7318.mp4",
+   "start": 15.4,
+   "end": 17.4,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/owner/hifu-c3-glow-handpiece.jpg",
+   "duration": 2.0,
+   "zoom": "in"
+  },
+  {
+   "src": "../../../footage/2026-11-21/h-IMG7327.mp4",
+   "start": 0.0,
+   "end": 2.0,
+   "mute": true
+  },
+  {
+   "src": "../../../brand/photos/owner/mira-laughing-client.jpg",
+   "duration": 2.2,
+   "zoom": "out",
+   "face_size": 0.3,
+   "zoom_amount": 0.05
+  },
+  {
+   "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
+   "start": 12.0,
+   "end": 14.4,
+   "mute": true
+  },
+  {
+   "src": "end.png",
+   "duration": 3.2,
+   "zoom": "in",
+   "zoom_amount": 0.02
+  }
+ ],
+ "overlays": [
+  {
+   "image": "t1-low.png",
+   "start": 0.0,
+   "end": 2.4,
+   "fade_in": 0
+  },
+  {
+   "image": "t3.png",
+   "start": 8.6,
+   "end": 11.0
+  },
+  {
+   "image": "t3b.png",
+   "start": 13.0,
+   "end": 15.0
+  },
+  {
+   "image": "t4m.png",
+   "start": 17.0,
+   "end": 19.2
+  },
+  {
+   "image": "t5.png",
+   "start": 19.2,
+   "end": 21.6
+  }
+ ]
+}
