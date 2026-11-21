@@ -123,6 +123,9 @@ Waxing (from $15) · Full Body Spray Tan · Massage
 - Calm, spotless, beautifully designed studio on Hawthorn Road
 
 ## Current offers
+- **Christmas HiFu (set by owner 21 Nov):** Full face + neck HiFu $299, 50% off $599, 1–10 December only.
+  [CONFIRM the dates and that $599 is the normal package price. A 'was' price must be a real price.
+  Owner to add this as a service on Fresha.]
 - EMS November special $77 (normally $149)
 - HiFu Jaw Line November special $199
 - Christmas offer: [OWNER TO DECIDE. See suggestions in `marketing/campaigns/2026-12-christmas-thuzzle.md`]
