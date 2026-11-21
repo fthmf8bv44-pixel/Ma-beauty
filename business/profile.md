@@ -6,6 +6,9 @@
 
 ## Basics
 - **Trading names:** MA Beauty / MA Beauty Therapy & Cosmetic Tattoo
+- **Team:** Mira (owner) plus at least one staff member (dark curly hair, beige uniform, seen doing HiFu
+  in the Nov 2026 clips). Owner confirmed 21 Nov that footage of Mira and staff can be used in posts and ads.
+  Don't write "done by Mira" over staff footage. [ADD staff names]
 - **Owner and practitioner:** Mira. "Decades of experience" in skin and body care (website).
 - **Address:** 342 Hawthorn Road, Caulfield South VIC 3162
 - **Phone:** 0437 662 239 (Fresha) / 1300 663 884 (website) [CONFIRM which to use in ads]
