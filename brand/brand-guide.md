@@ -48,6 +48,10 @@ Also follow `knowledge/no-ai-look.md`.
 | `circle-*.png` | Round service crops | Service menus |
 | `stock-model.jpg`, `stock-fabric.jpg` | Stock images | **Don't use** (they look generic) |
 
+## Photos the owner doesn't want used
+- Mira putting on pink gloves (removed 21 Nov). Mira didn't like how her face looked. Always let
+  the owner approve close-ups of her face.
+
 ## Tone of voice
 - Warm, personal, expert, honest. Mira talking to a client she's known for years.
 - Clients love that she's "not sales-y", so never sound pushy.
