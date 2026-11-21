@@ -14,9 +14,14 @@
    "mute": true
   },
   {
-   "src": "../../../brand/photos/website/hifu-face.jpg",
-   "duration": 2.4,
+   "src": "../../../brand/photos/owner/hifu-c3-mira-wide.jpg",
+   "duration": 1.8,
    "zoom": "in"
+  },
+  {
+   "src": "../../../brand/photos/website/hifu-face.jpg",
+   "duration": 1.8,
+   "zoom": "out"
   },
   {
    "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
@@ -25,9 +30,23 @@
    "mute": true
   },
   {
-   "src": "../../../brand/photos/website/mira-portrait-logo.jpg",
-   "duration": 2.2,
+   "src": "../../../brand/photos/owner/hifu-c3-glow-handpiece.jpg",
+   "duration": 2.0,
    "zoom": "in"
+  },
+  {
+   "src": "../../../brand/photos/owner/mira-gloves-on.jpg",
+   "duration": 2.0,
+   "zoom": "in",
+   "face_size": 0.3,
+   "zoom_amount": 0.05
+  },
+  {
+   "src": "../../../brand/photos/owner/mira-laughing-client.jpg",
+   "duration": 1.8,
+   "zoom": "out",
+   "face_size": 0.3,
+   "zoom_amount": 0.05
   },
   {
    "src": "../../../footage/2026-11-21/v02-IMG5930.mp4",
@@ -37,7 +56,7 @@
   },
   {
    "src": "end.png",
-   "duration": 3.5,
+   "duration": 3.2,
    "zoom": "in",
    "zoom_amount": 0.02
   }
@@ -50,18 +69,23 @@
   },
   {
    "image": "t3.png",
-   "start": 4.8,
-   "end": 7.2
+   "start": 6.0,
+   "end": 8.4
   },
   {
-   "image": "t4.png",
-   "start": 7.2,
-   "end": 9.4
+   "image": "t3b.png",
+   "start": 8.4,
+   "end": 10.4
+  },
+  {
+   "image": "t4m.png",
+   "start": 10.4,
+   "end": 12.4
   },
   {
    "image": "t5.png",
-   "start": 9.4,
-   "end": 11.8
+   "start": 14.2,
+   "end": 16.6
   }
  ]
 }
