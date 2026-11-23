@@ -113,6 +113,10 @@ Waxing (from $15) · Full Body Spray Tan · Massage
 - Beauty treatment consultation: **free**
 - Body treatment consultation: 30 min, **$22, deducted from the treatment price**
 
+## Client consent for content
+- **Georgia** (Thuzzle body + EMS testimonial video): owner confirmed 23 Nov 2026 that she agreed to the video
+  being used in posts AND paid ads. Ads: cut the waist-measuring and "before photo" moments (Meta before/after rules).
+
 ## Reputation
 - **Fresha:** 5.0 from **529 reviews** ("Highly Recommended")
 - **Google:** 5.0 from **56 reviews**
